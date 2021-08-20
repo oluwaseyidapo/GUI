@@ -30,7 +30,8 @@ import javax.swing.JTextField;
 
 import newproject.Question.QType;
 
-public class NewGame extends JFrame implements ActionListener,ItemListener {
+public class NewGame extends JFrame implements ActionListener,ItemListener { 
+	// majority if this code is not in use
 	private final static String SINGLE_PLAYER= "S";
 	private final static String END="end";
 	private static String inputLine;
@@ -70,9 +71,9 @@ public class NewGame extends JFrame implements ActionListener,ItemListener {
 	}
 	//Method to read the  file
 	public List<Question> reader() throws Exception{
-		infile= new File("/Users/samson/eclipse-workspace/test/Book1.csv");
-		reader= new FileReader(infile);
-		bufrea= new BufferedReader(reader);
+		infile= new File("/Users/samson/eclipse-workspace/test/Book1.csv"); //What if the file doesnt exist and why is infile a class variable?
+		reader= new FileReader(infile);//why is reader a class variable?
+		bufrea= new BufferedReader(reader); //why is buffer a class variable?
 		
 		List<Question> collection = new ArrayList<>();
 		
@@ -94,6 +95,7 @@ public class NewGame extends JFrame implements ActionListener,ItemListener {
 		
 		return collection;
 	}
+// is this in use?
 	//method to get tokens
 	public  static void getData()throws IOException{
 		token = new StringTokenizer(line);
@@ -104,6 +106,8 @@ public class NewGame extends JFrame implements ActionListener,ItemListener {
 			}
 		}
 	}
+	
+	//You need to clean up ur code all this things in comment is not needed
 //	//Seperation of each words, generated from the csv file
 //	public  SinglePlayer split() {		
 //		seperate=tok.split(" ,;,//");
@@ -164,6 +168,8 @@ public class NewGame extends JFrame implements ActionListener,ItemListener {
 //		input.addActionListener(this);
 //		setDefaultCloseOperation(EXIT_ON_CLOSE);
 	}
+	
+	//is this in use
 	@Override
 	public void actionPerformed(ActionEvent event) {
 		String favourite=null;
@@ -177,6 +183,8 @@ public class NewGame extends JFrame implements ActionListener,ItemListener {
 		JOptionPane.showMessageDialog(this, "your favourite answer is" + favourite);
 
 	}
+	
+	//is this in use
 	@Override
 	public void itemStateChanged(ItemEvent eve) {
 		JRadioButton source= (JRadioButton) eve.getSource();
