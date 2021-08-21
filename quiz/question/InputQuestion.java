@@ -1,4 +1,4 @@
-package newproject;
+package quiz.question;
 
 public class InputQuestion extends Question {
 
@@ -13,6 +13,4 @@ public class InputQuestion extends Question {
 				+ getAnswer() + ", getClass()=" + getClass() + ", hashCode()=" + hashCode() + ", toString()="
 				+ super.toString() + "]";
 	}
-	
-
 }

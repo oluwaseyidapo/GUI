@@ -1,16 +1,11 @@
-package newproject;
+package quiz.button;
 
 import java.awt.event.ActionListener;
 import javax.swing.JButton;
 
-/**
- * why did u have this clas if u are not using them
- * @author samson
- *
- */
-public class ButtonClass extends JButton {
+public class CustomJButton extends JButton {
 
-	public ButtonClass(String name) {
+	public CustomJButton(String name) {
 		super(name);
 	}
 

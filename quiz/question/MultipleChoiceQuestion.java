@@ -1,4 +1,4 @@
-package newproject;
+package quiz.question;
 
 public class MultipleChoiceQuestion extends Question {
 	
