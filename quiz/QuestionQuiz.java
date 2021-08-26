@@ -5,6 +5,8 @@ import java.io.FileReader;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
 import javax.swing.JFrame;
@@ -16,7 +18,6 @@ import quiz.question.Question.QType;
 
 public class QuestionQuiz extends JFrame { 
 	
-	public static Scanner scan;
 	private final String QUESTION_PATH = "./Questions.csv"; 
 	private List<Question> questions;
 	
